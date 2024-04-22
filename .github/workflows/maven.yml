@@ -35,5 +35,5 @@ jobs:
     - name: Build Dockerfile
       run: |
        echo ${{ secrets.DOCKER_TOKEN }} | docker login -u roumeliotisch --password-stdin
-       docker build -t roumeliotisch/test_accenture:$(date +'%Y-%m-%d') .
-       docker push roumeliotisch/test_accenture:$(date +'%Y-%m-%d')
+       docker build -t roumeliotisch/demo:$(date +'%Y-%m-%d') .
+       docker push roumeliotisch/demo:$(date +'%Y-%m-%d')
